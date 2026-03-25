@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nova Senha</title>
+    <link rel="stylesheet" href="css/novaSenha.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Definir Nova Senha</h2>
+
+        <input type="text" id="codigo" placeholder="Código recebido no e-mail">
+
+        <div class="password-container">
+            <input type="password" id="senha" placeholder="Nova senha">
+            <span class="toggle-password" onclick="togglePassword('senha', this)">👁</span>
+        </div>
+
+        <div class="password-container">
+            <input type="password" id="confirmarSenha" placeholder="Confirmar nova senha">
+            <span class="toggle-password" onclick="togglePassword('confirmarSenha', this)">👁</span>
+        </div>
+
+        <button id="btnSalvar" type="button" onclick="redefinirSenha()">
+            Salvar nova senha
+        </button>
+
+        <div class="msg" id="msg"></div>
+    </div>
+
+    <script src="js/novaSenha.js"></script>
+</body>
+
+</html>
